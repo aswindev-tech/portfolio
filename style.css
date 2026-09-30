@@ -529,6 +529,8 @@ section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .timeline-date {
@@ -589,6 +591,7 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 .contact-form {
@@ -655,6 +658,7 @@ footer p {
     .hero-image { margin-bottom: 3rem; }
     .image-container { width: 300px; height: 300px; }
     .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
+    .timeline-header { flex-direction: column; }
 }
 
 @media (max-width: 768px) {
@@ -662,6 +666,8 @@ footer p {
     .nav-links { display: none; }
     .menu-btn { display: block; }
     .section-title { font-size: 2.5rem; }
+    .hero h1 { font-size: 2.8rem; }
+    .projects-grid { grid-template-columns: 1fr; }
 }
 
 /* Reveal Animations */
